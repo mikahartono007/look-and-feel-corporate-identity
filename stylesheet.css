@@ -1,0 +1,122 @@
+/* We gebruiken hier Cascade layers, wat mogelijke problemen met Specificiteit voorkomt
+   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
+   https://css-tricks.com/css-cascade-layers/ */
+
+@layer styleguide {
+
+    /* Schrijf hier de verschillende stijlen, die
+       gedeeld gaan worden door jullie projecten */
+
+    /* Kleuren */
+    html {
+        color-scheme: light dark;
+    --color: light-dark( #3F2A14, #E5DCBC) ;
+    --bg: light-dark( #E5DCBC, #3F2A14) ; }
+    body {
+        background-color: var(--bg);
+    }
+    h1{
+        color: var(--color);
+    }
+    input{
+        border-color: var(--color);
+        background-color: var(--bg);
+    }
+    .color-example {
+        background-color: #B58A38;
+    }
+
+    .Background {
+        background-color: #E5DCBC;
+        Border: 3px solid #030303
+    }
+    .Frontcolor{
+        background-color: #3F2A14;
+        Border: 3px solid #030303
+    }
+
+    .Popups{
+        background-color: #E5DCBC;
+        Border: 3px solid #030303 
+    }
+
+     .Title {
+        background-color: #99cc99;
+        Border: 3px solid #030303 
+    }
+    .Kaartjes{
+        background-color: #99CCCC;
+        Border: 3px solid #030303 
+    }
+    
+
+        
+
+    /* Typografie */
+    .h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+
+
+
+    /* Formulier elementen */
+
+    /*button*/
+    .button{
+    border-radius: 5em;
+    padding: .5rem;
+    display: inline-block;
+    margin-top: 15px;
+    color: #3F2A14;
+    background-color: #E5DCBC;
+    border: 2px solid #3F2A14;
+    box-shadow: 0px 1px 4px black;;
+    }
+
+    .button:active {
+    --color: #E5DCBC;
+    --bg: #556B52;
+    }
+
+    .button:hover {
+    color: #3F2A14;
+    background-color: #99CCCC;
+    }
+
+    /*icons*/
+    .icons {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    gap: 20px; 
+    background-color: white;
+    width: max-content;
+    padding: 1rem;
+    border-radius: 1em;
+    }
+
+    .icons img {
+    width: 75px;
+    height: auto;
+    }
+
+
+}
