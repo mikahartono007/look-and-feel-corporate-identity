@@ -16,6 +16,8 @@
         --bg-surface: #E2C286;
         --color-accent: #99CC99;
         --bg-surface-hover: #99CCCC;
+        --reverse-color-primary: #E5DCBC;
+
         
         /* Lettertype */
         --font-family: 'Montserrat', sans-serif;
@@ -52,6 +54,7 @@
        --bg-surface: #E2C286;
        --color-accent: #E5DCBC;
        --bg-surface-hover: #CAF1F1;
+       --reverse-color-primary: #3F2A14;
   }
 }
 
