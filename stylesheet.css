@@ -62,7 +62,6 @@
     }
     
     input{
-<<<<<<< Updated upstream
         border-color: var(--color-primary);
         background-color: var(--bg-page);
     }
@@ -73,11 +72,6 @@
     .l-bg-surface { background-color: #E2C286; border: 2px solid #030303; }
     .l-color-accent { background-color: #99CC99; border: 2px solid #030303; }
     .l-bg-surface-hover { background-color: #99CCCC; border: 2px solid #030303; }
-=======
-        border-color: var(--color);
-        background-color: var(--bg);
-    }
->>>>>>> Stashed changes
 
     /* Dark mode cirkels */
     .d-bg-page { background-color: #3F2A14; border: 2px solid #030303; }
@@ -170,3 +164,4 @@
     height: auto;
     }
 
+}
