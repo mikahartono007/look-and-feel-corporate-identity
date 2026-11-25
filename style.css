@@ -1,11 +1,13 @@
 html {
-        color-scheme: light dark;
+    color-scheme: light dark;
     --color: light-dark( #3F2A14, #E5DCBC) ;
     --bg: light-dark( #E5DCBC, #3F2A14) ; 
 }
 
 body {
-    background-color: var(--bg); 
+    background-color: var(--bg-page);
+    color: var(--color-primary);
+    font-family: var(--font-family); 
 }
 
 a{
@@ -17,6 +19,7 @@ p{
     font-family: var(--font-family);
     font-size: var(--font-size-body);
     line-height: var(--line-height);
+    font-weight: var(--font-weight-semibold);
 }
 
 h1 {
@@ -68,6 +71,8 @@ h2 {
 }
 
 .naar-veld{
+    font-family: var(--font-family);  
+    font-size: 1.0rem; 
     border-radius: 5em;
     padding: .5rem;
     display: inline-block;
